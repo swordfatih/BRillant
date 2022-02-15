@@ -1,12 +1,12 @@
-package services;
+package servicesClient;
 
 import java.io.*;
 import java.net.*;
 
-import bri.Service;
+import bri.ServiceClient;
 
 // rien � ajouter ici
-public class ServiceInversion implements Service {
+public class ServiceInversion implements ServiceClient {
 	
 	private final Socket client;
 	
@@ -15,7 +15,8 @@ public class ServiceInversion implements Service {
 	}
 	@Override
 	public void run() {
-		try {BufferedReader in = new BufferedReader (new InputStreamReader(client.getInputStream ( )));
+		try {
+			BufferedReader in = new BufferedReader (new InputStreamReader(client.getInputStream ( )));
 			PrintWriter out = new PrintWriter (client.getOutputStream ( ), true);
 
 			out.println("Tapez un texte à inverser");

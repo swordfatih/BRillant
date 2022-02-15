@@ -19,10 +19,10 @@ public class ServiceRegistry {
 		servicesClasses = new Vector<>();
 	}
 
-	private static List<Class<? extends Service>> servicesClasses;
+	private static List<Class<? extends ServiceClient>> servicesClasses;
 
 	// ajoute une classe de service après contrôle de la norme BLTi
-	public static void addService(Class<? extends Service > classe) throws Exception {
+	public static void addService(Class<? extends ServiceClient > classe) throws Exception {
 		// vérifier la conformité par introspection
 		// si non conforme --> exception avec message clair
 		// si conforme, ajout au vector
@@ -33,8 +33,8 @@ public class ServiceRegistry {
 		if(Modifier.isAbstract(classe.getModifiers()))
 			throw new Exception("La classe est abstract !!");
 
-		if(Arrays.asList(classe.getInterfaces()).stream().filter(i -> i.getName().equals("bri.Service")).collect(Collectors.toList()).size() == 0)
-			throw new Exception("La classe n'implémente pas Service !!");
+		if(Arrays.asList(classe.getInterfaces()).stream().filter(i -> i.getName().equals("bri.ServiceClient")).collect(Collectors.toList()).size() == 0)
+			throw new Exception("La classe n'implémente pas ServiceClient !!");
 
 		boolean exists = false;
 		for(Constructor<?> c : classe.getConstructors()) {
@@ -63,7 +63,7 @@ public class ServiceRegistry {
 	}
 	
 	// renvoie la classe de service (numService -1)
-	public static Class<? extends Service> getServiceClass(int numService) {
+	public static Class<? extends ServiceClient> getServiceClass(int numService) {
 		return servicesClasses.get(numService - 1);
 	}
 	
