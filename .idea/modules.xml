@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BRillant.iml" filepath="$PROJECT_DIR$/.idea/BRillant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BRillant.iml" filepath="$PROJECT_DIR$/BRillant.iml" />
     </modules>
   </component>
 </project>
