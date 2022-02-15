@@ -1,0 +1,1888 @@
+[ INFO] 2017-02-10 10:17:36,014 [] [] FTP server started
+[ INFO] 2017-02-10 10:18:10,158 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:10,210 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:10,221 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:10,222 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:10,226 [] [0:0:0:0:0:0:0:1] RECEIVED: HEAD / HTTP/1.1
+[ INFO] 2017-02-10 10:18:10,226 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2017-02-10 10:18:10,227 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:18:10,227 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:18:10,228 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: *
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ WARN] 2017-02-10 10:18:10,238 [] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2017-02-10 10:18:10,240 [] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2017-02-10 10:18:10,240 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:24,467 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:24,468 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:24,469 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:24,473 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:18:24,473 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:18:24,474 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:18:24,476 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:18:24,978 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:18:24,980 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:18:24,980 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:24,980 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:24,981 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:24,982 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:31,475 [] [0:0:0:0:0:0:0:1] RECEIVED: USER h
+[ INFO] 2017-02-10 10:18:31,476 [h] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for h.
+
+[ INFO] 2017-02-10 10:18:31,509 [h] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:18:31,509 [h] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:18:32,009 [h] [0:0:0:0:0:0:0:1] Login failure - h
+[ INFO] 2017-02-10 10:18:32,010 [h] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:18:32,012 [h] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:22:18,612 [] [] FTP server started
+[ INFO] 2017-02-10 10:22:49,865 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:22:49,916 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:22:49,931 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:22:49,933 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:22:49,934 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:22:49,935 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:22:49,936 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:22:50,451 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:22:50,467 [anonymous] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:22:50,467 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:22:57,974 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: USER brette
+[ INFO] 2017-02-10 10:22:57,974 [brette] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for brette.
+
+[ INFO] 2017-02-10 10:22:58,005 [brette] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:22:58,005 [brette] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] Login failure - brette
+[ INFO] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:29,798 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:29,798 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: HEAD / HTTP/1.1
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: *
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ WARN] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:57,553 [] [0:0:0:0:0:0:0:1] RECEIVED: USER gs
+[ INFO] 2017-02-10 10:28:57,553 [gs] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for gs.
+
+[ INFO] 2017-02-10 10:28:59,075 [gs] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:28:59,075 [gs] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] Login failure - gs
+[ INFO] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:29:36,831 [] [] FTP server started
+[ INFO] 2017-02-10 10:29:41,167 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:29:41,739 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:29:41,754 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:29:41,754 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:29:57,828 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:51:17,498 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@deb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]; startup date [Fri Feb 10 10:51:17 CET 2017]; root of context hierarchy
+[ INFO] 2017-02-10 10:51:17,561 [] [] Loading XML bean definitions from file [C:\Users\brette\Desktop\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2017-02-10 10:51:19,045 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd
+[ INFO] 2017-02-10 10:51:19,061 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2017-02-10 10:51:19,217 [] [] FTP server started
+[ INFO] 2017-02-10 10:51:37,523 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:51:37,539 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:51:37,552 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:51:37,554 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:51:37,556 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:51:37,557 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 10:51:37,562 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 10:51:37,562 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 10:51:37,565 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 10:51:37,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 10:51:37,569 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 10:51:37,569 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 10:51:37,570 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 10:51:37,570 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 10:51:37,571 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 10:51:37,573 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 10:51:37,574 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 10:51:37,575 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 10:51:37,575 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:37,578 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2699|)
+
+[ INFO] 2017-02-10 10:51:37,581 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2017-02-10 10:51:37,582 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:37,582 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2699
+[ INFO] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2703|)
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /../
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2703
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2705|)
+
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /../../
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2705
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2707|)
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /../../README.txt
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /../../README.txt
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /../../README.txt
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2707
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2709|)
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2709
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:52:36,389 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:36,390 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2712|)
+
+[ INFO] 2017-02-10 10:52:36,391 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /README.txt
+[ INFO] 2017-02-10 10:52:36,391 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /README.txt
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /README.txt
+[ INFO] 2017-02-10 10:52:36,443 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2712
+[ INFO] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2714|)
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /README.txt
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /README.txt
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /README.txt
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2714
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2726|)
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette: Not a plain file.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095356.712
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette
+[ WARN] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2726
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette: Not a plain file.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2728|)
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /brette
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2728
+[ INFO] 2017-02-10 10:54:38,527 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:38,527 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:54:41,421 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:41,421 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2730|)
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /brette/README.txt
+[ WARN] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2730
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2732|)
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /brette/readme.txt
+[ WARN] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2732
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] CREATED
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] OPENED
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PASS *****
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: SYST
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: FEAT
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PWD
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: TYPE I
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PASV
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 227 Entering Passive Mode (172,19,34,124,10,215)
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 213 11
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: RETR /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] File downloaded /brette/readme.txt
+[ WARN] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] Releasing unreserved passive port: 2775
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:58:26,274 [anonymous] [172.19.35.38] CLOSED
+[ INFO] 2017-02-10 10:59:52,911 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 11:52:13,155 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@deb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]; startup date [Fri Feb 10 11:52:13 CET 2017]; root of context hierarchy
+[ INFO] 2017-02-10 11:52:13,187 [] [] Loading XML bean definitions from file [C:\Users\brette\Desktop\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2017-02-10 11:52:13,405 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd
+[ INFO] 2017-02-10 11:52:13,405 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2017-02-10 11:52:13,546 [] [] FTP server started
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 11:53:21,664 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 11:53:21,664 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 11:53:21,669 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 11:53:21,670 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 11:53:21,674 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 11:53:21,675 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 11:53:21,677 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 11:53:21,680 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 11:53:21,680 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 11:53:21,681 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 11:53:21,682 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:53:21,685 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3278|)
+
+[ INFO] 2017-02-10 11:53:21,689 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,690 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette/readme.txt: No such file or directory.
+
+[ INFO] 2017-02-10 11:53:21,690 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,691 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 File /brette/readme.txt unavailable.
+
+[ INFO] 2017-02-10 11:53:21,691 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/readme.txt
+[ WARN] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3278
+[ INFO] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette/readme.txt: No such file or directory.
+
+[ INFO] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:53:21,694 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3280|)
+
+[ INFO] 2017-02-10 11:53:21,694 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,695 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 No such directory.
+
+[ INFO] 2017-02-10 11:53:21,696 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2017-02-10 11:53:21,696 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3280
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 11:54:00,593 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3285|)
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /texte/bonjour.txt
+[ WARN] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3285
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3288|)
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 24
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210105431.255
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /texte/bonjour.txt
+[ WARN] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3288
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 11:59:34,129 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:08:36,272 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]; startup date [Tue Feb 08 10:08:36 CET 2022]; root of context hierarchy
+[ INFO] 2022-02-08 10:08:36,319 [] [] Loading XML bean definitions from file [E:\Scolarité\DUT2\S4A\APPREF\TP4\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2022-02-08 10:08:36,897 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11
+[ INFO] 2022-02-08 10:08:36,912 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2022-02-08 10:08:37,095 [] [] FTP server started
+[ INFO] 2022-02-08 10:10:08,242 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:10:08,242 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:10:08,250 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:10:08,250 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:10:08,264 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:10:08,265 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2022-02-08 10:10:08,267 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2022-02-08 10:10:08,267 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:2121
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: keep-alive
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:2121
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: keep-alive
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-mobile: ?0
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-platform: "Windows"
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-mobile: ?0
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Upgrade-Insecure-Requests: 1
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-platform: "Windows"
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.81 Safari/537.36
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Upgrade-Insecure-Requests: 1
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.81 Safari/537.36
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Site: none
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Mode: navigate
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Site: none
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-User: ?1
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Mode: navigate
+[ INFO] 2022-02-08 10:10:08,268 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Dest: document
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-User: ?1
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate, br
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Dest: document
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate, br
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:10:08,269 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ WARN] 2022-02-08 10:10:08,272 [] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:10:08,274 [] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:10:08,274 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:10:09,361 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:10:09,361 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:10:09,361 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:10:09,362 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:10:09,363 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:10:09,363 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:10:09,365 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:2121
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: keep-alive
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: Cache-Control: max-age=0
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-mobile: ?0
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-platform: "Windows"
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: Upgrade-Insecure-Requests: 1
+[ INFO] 2022-02-08 10:10:09,366 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.81 Safari/537.36
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Site: none
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Mode: navigate
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-User: ?1
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Dest: document
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate, br
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2022-02-08 10:10:09,367 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:10:17,261 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:10:17,263 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:10:17,268 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2022-02-08 10:10:17,269 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:10:17,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:2121
+[ INFO] 2022-02-08 10:10:17,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: keep-alive
+[ INFO] 2022-02-08 10:10:17,269 [] [0:0:0:0:0:0:0:1] RECEIVED: Cache-Control: max-age=0
+[ INFO] 2022-02-08 10:10:17,269 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-mobile: ?0
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: sec-ch-ua-platform: "Windows"
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: Upgrade-Insecure-Requests: 1
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.81 Safari/537.36
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Site: none
+[ INFO] 2022-02-08 10:10:17,270 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Mode: navigate
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-User: ?1
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] RECEIVED: Sec-Fetch-Dest: document
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate, br
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2022-02-08 10:10:17,271 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:11:20,810 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:11:20,811 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:11:20,817 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:11:20,819 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:11:20,822 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:11:20,822 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:11:20,828 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:11:20,829 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:11:20,830 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2022-02-08 10:11:20,833 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2022-02-08 10:11:20,834 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE A
+[ INFO] 2022-02-08 10:11:20,835 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:11:20,837 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:11:20,838 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49318|)
+
+[ WARN] 2022-02-08 10:11:20,841 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:11:20,846 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:11:20,848 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:11:20,850 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49318
+[ INFO] 2022-02-08 10:11:20,851 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:11:20,851 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:11:20,853 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:11:20,855 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:11:20,857 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:11:20,858 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:11:20,858 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:11:20,858 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:11:20,859 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2022-02-08 10:11:20,862 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2022-02-08 10:11:20,862 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE A
+[ INFO] 2022-02-08 10:11:20,863 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:11:20,863 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:11:20,864 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49321|)
+
+[ WARN] 2022-02-08 10:11:20,864 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:11:20,865 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:11:20,865 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:11:20,865 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49321
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49375|)
+
+[ WARN] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49375
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:11:41,072 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:11:41,072 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:11:41,087 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49378|)
+
+[ WARN] 2022-02-08 10:11:41,087 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:11:41,087 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:11:41,087 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:11:41,087 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49378
+[ INFO] 2022-02-08 10:12:09,355 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:12:09,356 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:12:09,356 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:12:09,357 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:12:09,358 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:12:09,358 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:12:09,358 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:12:09,358 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:12:09,359 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:12:09,359 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49399|)
+
+[ WARN] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49399
+[ INFO] 2022-02-08 10:12:09,360 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:12:09,360 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:12:09,360 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:12:09,360 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49402|)
+
+[ WARN] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:12:09,360 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49402
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49405|)
+
+[ WARN] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49405
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:12:10,375 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49408|)
+
+[ WARN] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:12:10,375 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49408
+[ INFO] 2022-02-08 10:13:03,995 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:13:03,995 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:13:04,011 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:13:04,011 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49444|)
+
+[ WARN] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49444
+[ INFO] 2022-02-08 10:13:04,011 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:13:04,011 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:13:04,011 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49447|)
+
+[ WARN] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:13:04,011 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49447
+[ INFO] 2022-02-08 10:13:05,887 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:13:05,887 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:13:05,887 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:13:05,887 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:13:05,887 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:13:05,887 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:13:05,887 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:13:05,887 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:13:05,887 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49452|)
+
+[ WARN] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49452
+[ INFO] 2022-02-08 10:13:05,903 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:13:05,903 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:13:05,903 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:13:05,903 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||49455|)
+
+[ WARN] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2022-02-08 10:13:05,903 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 49455
+[ INFO] 2022-02-08 10:14:47,963 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:14:50,635 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]; startup date [Tue Feb 08 10:14:50 CET 2022]; root of context hierarchy
+[ INFO] 2022-02-08 10:14:50,682 [] [] Loading XML bean definitions from file [E:\Scolarité\DUT2\S4A\APPREF\TP4\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2022-02-08 10:14:51,198 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11
+[ INFO] 2022-02-08 10:14:51,213 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2022-02-08 10:14:51,338 [] [] FTP server started
+[ INFO] 2022-02-08 10:15:55,011 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:15:55,026 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:15:55,026 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:15:55,026 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:15:55,026 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:15:55,026 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPRT |2|::1|49615|
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command EPRT okay.
+
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /texte/bonjour.txt
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 24
+
+[ INFO] 2022-02-08 10:15:55,042 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /texte/bonjour.txt
+[ INFO] 2022-02-08 10:15:55,120 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /texte/bonjour.txt
+[ INFO] 2022-02-08 10:15:55,120 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2022-02-08 10:15:55,120 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2022-02-08 10:20:56,113 [anonymous] [0:0:0:0:0:0:0:1] IDLE
+[ INFO] 2022-02-08 10:20:56,113 [anonymous] [0:0:0:0:0:0:0:1] Session idle, closing
+[ INFO] 2022-02-08 10:20:56,116 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:37:17,365 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:37:17,365 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:37:17,365 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:37:17,365 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:37:17,365 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:37:17,365 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:37:17,365 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:37:17,365 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:37:17,365 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE A
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPRT |2|::1|50379|
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command EPRT okay.
+
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2022-02-08 10:37:17,381 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2022-02-08 10:37:19,489 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:38:41,706 [] [127.0.0.1] CREATED
+[ INFO] 2022-02-08 10:38:41,706 [] [127.0.0.1] OPENED
+[ INFO] 2022-02-08 10:38:41,706 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:38:41,706 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] Anonymous login success - Java1.8.0_171@
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:38:41,706 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50420|)
+
+[ WARN] 2022-02-08 10:38:41,721 [anonymous] [127.0.0.1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:38:41,737 [anonymous] [127.0.0.1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:38:41,737 [anonymous] [127.0.0.1] CLOSED
+[ WARN] 2022-02-08 10:38:41,737 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50420
+[ INFO] 2022-02-08 10:45:10,591 [] [] FTP server started
+[ INFO] 2022-02-08 10:45:52,896 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]; startup date [Tue Feb 08 10:45:52 CET 2022]; root of context hierarchy
+[ INFO] 2022-02-08 10:45:52,943 [] [] Loading XML bean definitions from file [E:\Scolarité\DUT2\S4A\APPREF\TP4\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2022-02-08 10:45:53,475 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@1eb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11
+[ INFO] 2022-02-08 10:45:53,491 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f8f11: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2022-02-08 10:45:53,616 [] [] FTP server started
+[ INFO] 2022-02-08 10:46:00,356 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:46:00,362 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:46:00,362 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:46:00,362 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:46:00,362 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:46:00,362 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPRT |2|::1|50739|
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command EPRT okay.
+
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /serveurBRi.jar
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 5608
+
+[ INFO] 2022-02-08 10:46:00,378 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /serveurBRi.jar
+[ INFO] 2022-02-08 10:46:01,583 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /serveurBRi.jar
+[ INFO] 2022-02-08 10:46:01,583 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2022-02-08 10:46:01,583 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ WARN] 2022-02-08 10:46:06,738 [anonymous] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 10:46:06,741 [anonymous] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 10:46:06,741 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 10:46:07,918 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2022-02-08 10:46:07,918 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2022-02-08 10:46:07,918 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 10:46:07,918 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 10:46:07,918 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 10:46:07,918 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 10:46:07,918 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - IEUser@
+[ INFO] 2022-02-08 10:46:07,930 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 10:46:07,930 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /texte/
+[ INFO] 2022-02-08 10:46:07,931 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /texte
+
+[ INFO] 2022-02-08 10:46:07,932 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE A
+[ INFO] 2022-02-08 10:46:07,932 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 10:46:07,933 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPRT |2|::1|50746|
+[ INFO] 2022-02-08 10:46:07,933 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command EPRT okay.
+
+[ INFO] 2022-02-08 10:46:07,933 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ INFO] 2022-02-08 10:46:07,947 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2022-02-08 10:46:07,947 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2022-02-08 10:51:08,870 [anonymous] [0:0:0:0:0:0:0:1] IDLE
+[ INFO] 2022-02-08 10:51:08,870 [anonymous] [0:0:0:0:0:0:0:1] Session idle, closing
+[ INFO] 2022-02-08 10:51:08,870 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2022-02-08 11:05:43,277 [] [127.0.0.1] CREATED
+[ INFO] 2022-02-08 11:05:43,277 [] [127.0.0.1] OPENED
+[ INFO] 2022-02-08 11:05:43,277 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 11:05:43,277 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] Anonymous login success - Java1.8.0_171@
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51239|)
+
+[ WARN] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] CLOSED
+[ WARN] 2022-02-08 11:05:43,277 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51239
+[ INFO] 2022-02-08 11:05:48,909 [] [127.0.0.1] CREATED
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] OPENED
+[ INFO] 2022-02-08 11:05:48,909 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] Anonymous login success - Java1.8.0_171@
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 11:05:48,909 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51247|)
+
+[ WARN] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] CLOSED
+[ WARN] 2022-02-08 11:05:48,925 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51247
+[ INFO] 2022-02-08 11:27:26,647 [] [127.0.0.1] CREATED
+[ INFO] 2022-02-08 11:27:26,647 [] [127.0.0.1] OPENED
+[ INFO] 2022-02-08 11:27:26,647 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 11:27:26,647 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] Anonymous login success - Java1.8.0_171@
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51785|)
+
+[ WARN] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] CLOSED
+[ WARN] 2022-02-08 11:27:26,647 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51785
+[ INFO] 2022-02-08 11:27:36,721 [] [127.0.0.1] CREATED
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] OPENED
+[ INFO] 2022-02-08 11:27:36,721 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] Anonymous login success - Java1.8.0_171@
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51794|)
+
+[ WARN] 2022-02-08 11:27:36,721 [anonymous] [127.0.0.1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2022-02-08 11:27:36,737 [anonymous] [127.0.0.1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2022-02-08 11:27:36,737 [anonymous] [127.0.0.1] CLOSED
+[ WARN] 2022-02-08 11:27:36,737 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51794
