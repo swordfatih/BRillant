@@ -1,7 +1,8 @@
 package bri;
 
 import java.io.*;
-import java.net.*;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 public class ServeurBRi implements Runnable {
 	private ServerSocket listen_socket;
@@ -19,7 +20,8 @@ public class ServeurBRi implements Runnable {
 	public void run() {
 		while(true) {
 			try {
-				new Thread(classService.getConstructor(ServerSocket.class).newInstance(listen_socket.accept())).start();
+				System.out.println("Serveur " + classService.getName() + " en attente de client");
+				new Thread(classService.getConstructor(Socket.class).newInstance(listen_socket.accept())).start();
 			}
 			catch (Exception e) {
 				System.err.println("Problème sur le port d'écoute : " + e);
