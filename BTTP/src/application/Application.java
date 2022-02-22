@@ -12,9 +12,12 @@ public class Application {
         System.out.println("**************");
 
         Scanner in = new Scanner(System.in);
+        System.out.println("Entrez l'adresse du serveur");
+        String host = in.nextLine();
+        System.out.println("Entrez le port du serveur");
         int port = in.nextInt();
 
         //new Thread(new ServeurBTTP(PORT)).start();
-        new Thread(new ClientBTTP(port)).start();
+        new Thread(new ClientBTTP(host, port)).start();
     }
 }

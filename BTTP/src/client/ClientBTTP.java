@@ -7,7 +7,8 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public final class ClientBTTP implements Runnable {
-    private static final String HOST = "localhost"; // 172.19.33.231
+    // private static final String HOST = "localhost"; // 172.19.33.231
+    private String host;
     private int port;
 
     private static int cpt = 0;
@@ -19,7 +20,8 @@ public final class ClientBTTP implements Runnable {
 
     ArrayList<ClientService> services;
 
-    public ClientBTTP(int port) {
+    public ClientBTTP(String host, int port) {
+        this.host = host;
         this.port = port;
         clientId = cpt++;
 
@@ -31,8 +33,8 @@ public final class ClientBTTP implements Runnable {
     @Override
     public void run() {
         try {
-            socket = new Socket(HOST, port);
-            System.out.println("### [" + clientId + "] Connecté au serveur " + HOST + " sur le port " + port);
+            socket = new Socket(host, port);
+            System.out.println("### [" + clientId + "] Connecté au serveur " + host + " sur le port " + port);
 
             socketOut = new PrintWriter(socket.getOutputStream(), true);
             socketIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
