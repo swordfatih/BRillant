@@ -4,4 +4,4 @@ BRillant.iml
 BTTP/out/*
 BTTP/.idea/*
 BTTP/BTTP.iml
-apache-ftpserver/res/log/*
+apache-ftpserver/res/log/ftpd.log
