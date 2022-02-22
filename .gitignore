@@ -5,3 +5,4 @@ BTTP/out/*
 BTTP/.idea/*
 BTTP/BTTP.iml
 apache-ftpserver/res/log/ftpd.log
+.idea/
