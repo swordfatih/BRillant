@@ -2609,3 +2609,4 @@ java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
 [ INFO] 2022-02-15 10:52:19,528 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
 
 [ INFO] 2022-02-15 10:52:19,528 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2022-02-22 09:54:28,728 [] [] FTP server started
