@@ -2,6 +2,7 @@ package servicesClient;
 
 import java.io.*;
 import java.net.*;
+import java.util.Locale;
 
 import bri.ServiceClient;
 
@@ -21,10 +22,11 @@ public class ServiceInversion implements ServiceClient {
 
 			out.println("Tapez un texte à inverser");
 		
-			String line = in.readLine();		
+			String line = in.readLine();
+			line = line.substring(1,2).toUpperCase() + line.substring(2).toLowerCase();
 	
 			String invLine = new String (new StringBuffer(line).reverse());
-			
+
 			out.println(invLine);
 			
 			client.close();

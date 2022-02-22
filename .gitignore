@@ -1,8 +1,7 @@
-.idea/*
-out/*
+.idea/**
+out/**
 BRillant.iml
-BTTP/out/*
-BTTP/.idea/*
+BTTP/out/**
+BTTP/.idea/**
 BTTP/BTTP.iml
-apache-ftpserver/res/log/ftpd.log
-.idea/
+apache-ftpserver/res/log/**
