@@ -6,9 +6,7 @@ import bri.ServiceRegistry;
 import bri.ServiceServeur;
 
 import java.io.*;
-import java.lang.reflect.InvocationTargetException;
 import java.net.*;
-
 
 public class ServiceAmateur implements ServiceServeur {
 	private Socket client;
@@ -19,6 +17,8 @@ public class ServiceAmateur implements ServiceServeur {
 
 	public void run() {
 		try {
+			System.out.println("## Un amateur s'est connecté !");
+
 			BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 
@@ -33,12 +33,14 @@ public class ServiceAmateur implements ServiceServeur {
 			s.run();
 		}
 		catch (Exception e) {
-			//Fin du service
+			e.printStackTrace();
 		}
 
 		try {
 			client.close();
-		} catch (IOException e2) {}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	protected void finalize() throws Throwable {

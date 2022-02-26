@@ -1,7 +1,10 @@
-.idea/**
-out/**
-BRillant.iml
-BTTP/out/**
-BTTP/.idea/**
-BTTP/BTTP.iml
-apache-ftpserver/res/log/**
+# fichiers du projet intellij
+.idea/
+out/
+*.iml
+
+# fichiers inutiles dans apache ftpserver
+apache-ftpserver/res/log/
+apache-ftpserver/*
+!apache-ftpserver/*/
+

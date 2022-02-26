@@ -21,6 +21,8 @@ public class ServiceProg implements ServiceServeur {
     @Override
     public void run() {
         try {
+            System.out.println("## Un programmeur s'est connecté !");
+
             BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
             PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 
@@ -29,8 +31,10 @@ public class ServiceProg implements ServiceServeur {
             out.println("A tout instant, en tapant le nom de la classe, vous pouvez l'intégrer");
             out.println("Les clients se connectent au serveur 3000 pour lancer une activité");
 
-            out.println("## Tapez l'adresse de votre serveur FTP : ");
-            String fileDirURL = in.readLine();
+            //out.println("## Tapez l'adresse de votre serveur FTP : ");
+            // String fileDirURL = in.readLine();
+
+            String fileDirURL = "ftp://localhost:2121/";
 
             // URLClassLoader sur ftp
             URLClassLoader urlcl = new URLClassLoader(new URL[]{new URL(fileDirURL)});
@@ -44,7 +48,7 @@ public class ServiceProg implements ServiceServeur {
             out.println("Service " + classeName + " a été ajouté avec succès!");
         }
         catch(Exception e) {
-
+            e.printStackTrace();
         }
 
     }
