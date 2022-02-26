@@ -18,16 +18,16 @@ public class ClientListener extends ClientService {
                             s.stop();
 
                         getBttp().getSocket().close();
-                        System.out.println("### [" + getBttp().getClientId() + "] Connexion terminée");
+                        System.out.println("### Connexion terminée");
                         return;
                     }
                     else {
-                        System.out.println("### [" + getBttp().getClientId() + "] Serveur >>> " + reponse);
+                        System.out.println("### Serveur >>> " + reponse);
                     }
                 }
             }
         } catch (IOException e) {
-            System.out.println("### [" + getBttp().getClientId() + "] Connexion interrompu");
+            System.out.println("### Connexion interrompu");
         }
     }
 }

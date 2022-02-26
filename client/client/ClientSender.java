@@ -27,7 +27,7 @@ public class ClientSender extends ClientService {
                 String requete = null;
                 if (br.ready() && (requete = br.readLine()) != null) {
                     getBttp().getSocketOut().println(requete);
-                    System.out.println("### [" + getBttp().getClientId() + "] Serveur <<< " + requete);
+                    System.out.println("### Client <<< " + requete);
                 }
             }
         } catch(IOException e) {

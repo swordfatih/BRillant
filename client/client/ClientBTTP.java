@@ -12,7 +12,6 @@ public final class ClientBTTP implements Runnable {
     private int port;
 
     private static int cpt = 0;
-    private Integer clientId = null;
 
     private Socket socket = null;
     private BufferedReader socketIn = null;
@@ -23,7 +22,6 @@ public final class ClientBTTP implements Runnable {
     public ClientBTTP(String host, int port) {
         this.host = host;
         this.port = port;
-        clientId = cpt++;
 
         services = new ArrayList<>();
         services.add(new ClientSender(this));
@@ -34,7 +32,7 @@ public final class ClientBTTP implements Runnable {
     public void run() {
         try {
             socket = new Socket(host, port);
-            System.out.println("### [" + clientId + "] Connecté au serveur " + host + " sur le port " + port);
+            System.out.println("### Connecté au serveur " + host + " sur le port " + port);
 
             socketOut = new PrintWriter(socket.getOutputStream(), true);
             socketIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -42,7 +40,7 @@ public final class ClientBTTP implements Runnable {
             for(ClientService s: services)
                 new Thread(s).start();
         } catch(Exception e) {
-            System.out.println("### [" + clientId + "] Connexion échouée");
+            System.out.println("### Connexion échouée");
         }
     }
 
@@ -52,10 +50,6 @@ public final class ClientBTTP implements Runnable {
 
     public BufferedReader getSocketIn() {
         return socketIn;
-    }
-
-    public int getClientId() {
-        return clientId;
     }
 
     public Socket getSocket() {
