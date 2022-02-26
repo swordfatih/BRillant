@@ -10,7 +10,7 @@ import java.net.*;
 
 public class ServiceAmateur implements ServiceServeur {
 	private Socket client;
-	
+
 	public ServiceAmateur(Socket socket) {
 		client = socket;
 	}
