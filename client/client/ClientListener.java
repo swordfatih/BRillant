@@ -11,21 +11,23 @@ public class ClientListener extends ClientService {
     public void run() {
         try {
             while (true) {
-                String reponse = null;
+                String reponse;
                 if ((reponse = getBttp().getSocketIn().readLine()) != null) {
-                    System.out.println("### [" + getBttp().getClientId() + "] Serveur >>> " + reponse);
-
                     if (reponse.equals("fin")) {
                         for (ClientService s : getBttp().getServices())
                             s.stop();
 
                         getBttp().getSocket().close();
                         System.out.println("### [" + getBttp().getClientId() + "] Connexion terminée");
+                        return;
+                    }
+                    else {
+                        System.out.println("### [" + getBttp().getClientId() + "] Serveur >>> " + reponse);
                     }
                 }
             }
         } catch (IOException e) {
-            return;
+            System.out.println("### [" + getBttp().getClientId() + "] Connexion interrompu");
         }
     }
 }

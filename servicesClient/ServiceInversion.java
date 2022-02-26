@@ -4,8 +4,10 @@ import java.io.*;
 import java.net.*;
 
 import bri.ServiceClient;
- 
-// rien à ajouter ici
+
+/**
+ * Service inversant un mot donne
+ */
 public class ServiceInversion implements ServiceClient {
 	
 	private final Socket client;
@@ -15,11 +17,11 @@ public class ServiceInversion implements ServiceClient {
 	}
 
 	@Override
-	public void run() {
+	public void run() throws IOException {
 		try {BufferedReader in = new BufferedReader (new InputStreamReader(client.getInputStream ( )));
 			PrintWriter out = new PrintWriter (client.getOutputStream ( ), true);
 
-			out.println("Tapez un texte à inverser");
+			out.println("Tapez un texte a inverser");
 		
 			String line = in.readLine();		
 	
@@ -28,13 +30,11 @@ public class ServiceInversion implements ServiceClient {
 			out.println(invLine);
 			
 			client.close();
-			System.out.println("Service d'inversion fini !");
-		}
-		catch (IOException e) {
-			//Fin du service d'inversion
 		}
 	}
-	
+
+	// restituer les ressources
+	@SuppressWarnings("deprecation")
 	protected void finalize() throws Throwable {
 		 client.close(); 
 	}

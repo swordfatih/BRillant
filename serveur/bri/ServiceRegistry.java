@@ -1,85 +1,89 @@
 package bri;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.net.Socket;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
-import java.util.stream.Collectors;
 
+/**
+ * ServiceRegistry
+ *
+ * Cette classe est un registre de services
+ * partagee en concurrence par les clients
+ * et les "ajouteurs" de services
+ */
 public class ServiceRegistry {
-	// cette classe est un registre de services
-	// partagée en concurrence par les clients et les "ajouteurs" de services,
-	// un Vector pour cette gestion est pratique
+	// Un Vector pour cette gestion est pratique
+	private static final List<Class<? extends ServiceClient>> servicesClasses;
+	static { servicesClasses = new Vector<>(); }
 
-	static {
-		servicesClasses = new Vector<>();
-	}
+	// ajoute une classe de service apres controle de la norme BLTi
+	public static void addService(Class<? extends ServiceClient > classe) throws ExceptionNorme {
+		// implementer l'interface BRi.Service
+		if(Arrays.stream(classe.getInterfaces()).noneMatch(i -> i == ServiceClient.class))
+			throw new ExceptionNorme("La classe doit implementer ServiceClient");
 
-	private static List<Class<? extends ServiceClient>> servicesClasses;
-
-	// ajoute une classe de service après contrôle de la norme BLTi
-	public static void addService(Class<? extends ServiceClient > classe) throws Exception {
-		// vérifier la conformité par introspection
-		// si non conforme --> exception avec message clair
-		// si conforme, ajout au vector
-
-		if(!Modifier.isPublic(classe.getModifiers()))
-			throw new Exception("La classe n'est pas publique !!");
-
+		// ne pas etre abstract
 		if(Modifier.isAbstract(classe.getModifiers()))
-			throw new Exception("La classe est abstract !!");
+			throw new ExceptionNorme("La classe ne doit pas etre abstract");
 
-		if(Arrays.asList(classe.getInterfaces()).stream().filter(i -> i.getName().equals("bri.ServiceClient")).collect(Collectors.toList()).size() == 0)
-			throw new Exception("La classe n'implémente pas ServiceClient !!");
+		// etre publique
+		if(!Modifier.isPublic(classe.getModifiers()))
+			throw new ExceptionNorme("La classe doit etre publique");
 
-		boolean exists = false;
-		for(Constructor<?> c : classe.getConstructors()) {
-			if(Modifier.isPublic(classe.getConstructors()[0].getModifiers()) && classe.getConstructors()[0].getParameterCount() == 1)
-				exists = true;
-		}
+		// avoir un constructeur public (Socket) sans exception
+		if(Arrays.stream(classe.getConstructors()).noneMatch(c -> Modifier.isPublic(c.getModifiers()) && c.getParameterCount() == 1 && c.getParameterTypes()[0] == Socket.class && c.getExceptionTypes().length == 0))
+			throw new ExceptionNorme("La classe doit avoir un constructeur public (Socket) sans exception");
 
-		if(!exists)
-			throw new Exception("IL N'EXISTE PAS DE CONSTRUCTEUR PUBLIC ET SANS PARAMETRE !!");
+		// avoir un attribut Socket private final
+		if(Arrays.stream(classe.getDeclaredFields()).noneMatch(f -> f.getType() == Socket.class && Modifier.isPrivate(f.getModifiers()) && Modifier.isFinal(f.getModifiers())))
+			throw new ExceptionNorme("La classe doit avoir un attribut Socket private final");
 
-		exists = false;
-		Field[] fields = classe.getDeclaredFields();
-		for(Field field : fields) {
-			if(field.getClass().getName().equals(Socket.class.getName()))
-				exists = true;
-		}
+		// avoir une méthode public static String toStringue() sans exception
+		if(Arrays.stream(classe.getMethods()).noneMatch(m -> m.getName().equals("toStringue") && Modifier.isStatic(m.getModifiers()) && Modifier.isPublic(m.getModifiers()) && m.getReturnType() == String.class && m.getExceptionTypes().length == 0))
+			throw new ExceptionNorme("La classe doit avoir une méthode public static String toStringue() sans exception");
 
-		try {
-			Method setter = classe.getMethod("toStringue");
-		} catch(Exception e) {
-			throw new RuntimeException("Il manque le toStringue");
-		}
-
+		// la classe respecte la norme BRi, on l'ajoute
 		servicesClasses.add(classe);
-		System.out.println("Debug: La classe " + classe.getName() + " a été ajouté");
 	}
 	
-	// renvoie la classe de service (numService -1)
+	// renvoie la classe du service se trouvant a l'indice (n - 1)
 	public static Class<? extends ServiceClient> getServiceClass(int numService) {
-		return servicesClasses.get(numService - 1);
+		synchronized (servicesClasses) {
+			return servicesClasses.get(numService - 1);
+		}
+	}
+
+	// renvoie le nombre de service installes
+	public static int getServiceCount() {
+		synchronized (servicesClasses) {
+			return servicesClasses.size();
+		}
 	}
 	
-	// liste les activités présentes
+	// liste les services installes
 	public static String toStringue() {
-		String result = "Activités présentes : ";
+		StringBuilder result = new StringBuilder();
+
+		result.append("*****************************************\n");
+		result.append("Liste des services installes\n");
 
 		synchronized (servicesClasses) {
 			for (int i = 0; i < servicesClasses.size(); ++i) {
-				result += " ## " + (i + 1) + " -> " + servicesClasses.get(i).getName();
+				result.append("[");
+				result.append(i + 1);
+				result.append("] ");
+				result.append(servicesClasses.get(i).getName());
+				result.append("\n");
 			}
+
+			if(servicesClasses.isEmpty())
+				result.append("[INFO] Aucun service n'est encore installe\n");
 		}
 
-		result += "\n";
+		result.append("*****************************************");
 
-		return result;
+		return result.toString();
 	}
-
 }
