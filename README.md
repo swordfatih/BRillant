@@ -15,7 +15,7 @@ In order to start the server, compile it and start the main function in the `ser
 ## FTP
 You need an FTP server in order to use this platform. An Apache FTP Server installation is given in the repository, set your JRE installation folder as `JAVA_HOME` environement variable and start your server using the following command `bin\ftpd.bat res\conf\ftpd-typical.xml`. (`ftpd.sh` on Linux)
 
-Put your files in the `apache-ftpserver\res\home` folder.
+Put your compiled files in the `apache-ftpserver\res\home` folder. Don't forget to reproduce your package structure (ie. `bri.Service` -> home/bri/Service.class)
 
 # Usage
 ### Programmers
