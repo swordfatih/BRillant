@@ -17,16 +17,16 @@ You need an FTP server in order to use this platform. An Apache FTP Server insta
 
 Put your files in the `apache-ftpserver\res\home` folder.
 
+# Usage
 ### Programmers
 Programmers use the port 4000 to connect to the server.
+
+When connected, programmers can log in their existing account or create a new account, in which case they need to provide the url of their FTP server. After authentification, different actions are possible as installing a new service, updating an existing one, activating or disactivating a service, changing the URL of your FTP server or deleting a service.
 
 ### Users
 Users use the port 3000 to connect to the server.
 
-# Usage
-When connected, programmers can log in their existing account or create a new account, in which case they need to provide the url of their FTP server. After authentification, different actions are possible as installing a new service, updating an existing one, activating or disactivating a service, changing the URL of your FTP server or deleting a service.
-
-Users are shown the list of active services. They can chose one and directly start using them. 
+When connected, users are shown the list of active services. They can chose one and directly start using them. 
 
 ## BRi Standard
 Service classes must follow the BRi standard in order to be added to the platform, here are all the conditions.
