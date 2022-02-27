@@ -20,7 +20,7 @@ public class ServiceProgUpdate extends ServiceProg {
     }
 
     public void activite(Socket client, BufferedReader in, PrintWriter out) throws IOException, ReflectiveOperationException, ExceptionNorme {
-        out.println(ServiceRegistry.toStringue(true));
+        out.println(ServiceRegistry.toStringue(false));
         if (ServiceRegistry.getServiceCount() == 0) return;
 
         out.println("Tapez l'indice du service a mettre a jour");

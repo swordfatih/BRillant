@@ -124,6 +124,13 @@ public class ServiceRegistry {
 			return servicesClasses.size();
 		}
 	}
+
+	// renvoie le nombre de service active
+	public static long getActiveCount() {
+		synchronized (servicesClasses) {
+			return servicesClasses.stream().filter(s -> s.estActif()).count();
+		}
+	}
 	
 	// liste les services installes
 	// parametre actif: si vrai, seuls les services actifs sont retournes
