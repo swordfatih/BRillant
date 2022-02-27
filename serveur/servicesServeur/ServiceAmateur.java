@@ -17,26 +17,36 @@ public class ServiceAmateur extends ServiceServeur {
 	}
 
 	public void activite(Socket client, BufferedReader in, PrintWriter out) throws NumberFormatException, IOException, ReflectiveOperationException {
-		out.println(ServiceRegistry.toStringue(true));
+		String line = "";
+		while(!line.startsWith("end")) {
+			out.println(ServiceRegistry.toStringue(true));
 
-		// il n'y a pas de service installe
-		if (ServiceRegistry.getServiceCount() == 0) return;
+			// il n'y a pas de service installe
+			if (ServiceRegistry.getServiceCount() == 0) break;
 
-		out.println("Tapez le numero du service desire");
-		int choix = Integer.parseInt(in.readLine());
+			out.println("Ecrivez 'end' pour quitter la platforme");
+			out.println("Tapez le numero du service desire");
 
-		if (choix < 1 || choix > ServiceRegistry.getServiceCount()) {
-			out.println("Le numero donne ne correspond a aucun service");
-			out.println("fin");
-			return;
+			line = in.readLine();
+
+			if (!line.startsWith("end")) {
+				int choix = Integer.parseInt(line);
+
+				if (choix < 1 || choix > ServiceRegistry.getServiceCount()) {
+					out.println("L'indice ne correspond a aucun service");
+					continue;
+				}
+
+				// instancier le service numéro "choix" en lui passant la socket "client"
+				Class<? extends ServiceClient> classe = ServiceRegistry.getServiceClass(choix - 1);
+				ServiceClient s = classe.getDeclaredConstructor(Socket.class).newInstance(client);
+
+				// invoquer run() pour cette instance ou la lancer dans un thread à part
+				s.run();
+			}
 		}
 
-		// instancier le service numéro "choix" en lui passant la socket "client"
-		Class<? extends ServiceClient> classe = ServiceRegistry.getServiceClass(choix - 1);
-		ServiceClient s = classe.getDeclaredConstructor(Socket.class).newInstance(client);
-
-		// invoquer run() pour cette instance ou la lancer dans un thread à part
-		s.run();
+		out.println("fin");
 	}
 
 	public String getUtilisateur() {
