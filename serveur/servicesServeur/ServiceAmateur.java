@@ -17,7 +17,7 @@ public class ServiceAmateur extends ServiceServeur {
 	}
 
 	public void activite(Socket client, BufferedReader in, PrintWriter out) throws NumberFormatException, IOException, ReflectiveOperationException {
-		out.println(ServiceRegistry.toStringue());
+		out.println(ServiceRegistry.toStringue(true));
 
 		// il n'y a pas de service installe
 		if (ServiceRegistry.getServiceCount() == 0) return;

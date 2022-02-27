@@ -32,7 +32,7 @@ public abstract class ServiceServeur implements Runnable {
         } catch (ReflectiveOperationException e) {
             out.println("La classe fournie ne se trouve pas sur le serveur FTP");
         } catch (NumberFormatException e) {
-            if(out != null) out.println("Aucun service ne correspond au numero donne");
+            if(out != null) out.println("Aucun service ne correspond a l'indice donne");
         }
 
         if(out != null) out.println("fin");

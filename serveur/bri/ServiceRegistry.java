@@ -2,9 +2,33 @@ package bri;
 
 import java.lang.reflect.Modifier;
 import java.net.Socket;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
+
+class InformationsService {
+	private final Class<? extends ServiceClient> classe;
+	private boolean actif;
+
+	public InformationsService(Class<? extends ServiceClient> classe, boolean actif) {
+		this.classe = classe;
+		this.actif = actif;
+	}
+
+	public InformationsService(Class<? extends ServiceClient> classe) {
+		this(classe, true);
+	}
+
+	public boolean estActif() {
+		return actif;
+	}
+
+	public void setActif(boolean actif) {
+		this.actif = actif;
+	}
+
+	public Class<? extends ServiceClient> getClasse() {
+		return classe;
+	}
+}
 
 /**
  * ServiceRegistry
@@ -14,12 +38,11 @@ import java.util.Vector;
  * et les "ajouteurs" de services
  */
 public class ServiceRegistry {
-	// Un Vector pour cette gestion est pratique
-	private static final List<Class<? extends ServiceClient>> servicesClasses;
+	private static final List<InformationsService> servicesClasses;
 	static { servicesClasses = new Vector<>(); }
 
-	// ajoute une classe de service apres controle de la norme BLTi
-	public static void addService(Class<? extends ServiceClient > classe) throws ExceptionNorme {
+	// ajoute une classe de service apres controle de la norme BRi
+	public static void addService(Class<? extends ServiceClient> classe) throws ExceptionNorme {
 		// heriter de la classe abstraite bri.ServiceClient
 		if(!classe.getSuperclass().getName().equals(ServiceClient.class.getName()))
 			throw new ExceptionNorme("La classe doit heriter de la classe abstraite bri.ServiceClient");
@@ -44,18 +67,47 @@ public class ServiceRegistry {
 		if(Arrays.stream(classe.getMethods()).noneMatch(m -> m.getName().equals("toStringue") && Modifier.isStatic(m.getModifiers()) && Modifier.isPublic(m.getModifiers()) && m.getReturnType() == String.class && m.getExceptionTypes().length == 0))
 			throw new ExceptionNorme("La classe doit avoir une méthode public static String toStringue() sans exception");
 
-		// ne pas etre deja ajoute
-		if(!servicesClasses.stream().noneMatch(c -> c.getName().equals(classe.getName())))
-			throw new ExceptionNorme("La classe doit ne pas etre deja installe");
+		synchronized (servicesClasses) {
+			// ne pas etre deja ajoute
+			if(servicesClasses.stream().anyMatch(c -> c.getClasse().getName().equals(classe.getName())))
+				throw new ExceptionNorme("La classe doit ne pas etre deja installe");
 
-		// la classe respecte la norme BRi, on l'ajoute
-		servicesClasses.add(classe);
+			// la classe respecte la norme BRi, on l'ajoute
+			servicesClasses.add(new InformationsService(classe));
+		}
+	}
+
+	public static void setActifService(int numService, boolean actif) throws ExceptionNorme {
+		synchronized (servicesClasses) {
+			if (numService < 1 || numService > servicesClasses.size())
+				throw new ExceptionNorme("La classe doit exister pour etre activee");
+
+			servicesClasses.get(numService).setActif(actif);
+		}
+	}
+
+	public static void removeService(int numService) throws ExceptionNorme {
+		synchronized (servicesClasses) {
+			if (numService < 1 || numService > servicesClasses.size())
+				throw new ExceptionNorme("La classe doit exister pour etre desinstalle");
+
+			servicesClasses.remove(numService);
+		}
+	}
+
+	public static void updateService(Integer indice, Class<? extends ServiceClient> classe) {
+		synchronized (servicesClasses) {
+			servicesClasses.set(indice, new InformationsService(classe, servicesClasses.get(indice).estActif()));
+		}
 	}
 	
-	// renvoie la classe du service se trouvant a l'indice (n - 1)
+	// renvoie la classe du service se trouvant a l'indice n
 	public static Class<? extends ServiceClient> getServiceClass(int numService) {
 		synchronized (servicesClasses) {
-			return servicesClasses.get(numService - 1);
+			if(numService < 1 || numService > servicesClasses.size())
+				throw new NumberFormatException();
+
+			return servicesClasses.get(numService).getClasse();
 		}
 	}
 
@@ -67,7 +119,8 @@ public class ServiceRegistry {
 	}
 	
 	// liste les services installes
-	public static String toStringue() {
+	// parametre actif: si vrai, seuls les services actifs sont retournes
+	public static String toStringue(boolean actifs) {
 		StringBuilder result = new StringBuilder();
 
 		result.append("*****************************************\n");
@@ -75,17 +128,19 @@ public class ServiceRegistry {
 
 		synchronized (servicesClasses) {
 			for (int i = 0; i < servicesClasses.size(); ++i) {
-				result.append("[");
-				result.append(i + 1);
-				result.append("] ");
+				if(!actifs || servicesClasses.get(i).estActif()) {
+					result.append("[");
+					result.append(i + 1);
+					result.append("] ");
 
-				try {
-					result.append(servicesClasses.get(i).getMethod("toStringue").invoke(null));
-				} catch (ReflectiveOperationException e) {
-					result.append(servicesClasses.get(i).getName());
+					try {
+						result.append(servicesClasses.get(i).getClasse().getMethod("toStringue").invoke(null));
+					} catch (ReflectiveOperationException e) {
+						result.append(servicesClasses.get(i).getClasse().getName());
+					}
+
+					result.append("\n");
 				}
-
-				result.append("\n");
 			}
 
 			if(servicesClasses.isEmpty())
