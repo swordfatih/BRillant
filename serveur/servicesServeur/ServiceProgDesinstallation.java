@@ -15,6 +15,7 @@ public class ServiceProgDesinstallation extends ServiceProg {
 
     public void activite(Socket client, BufferedReader in, PrintWriter out) throws IOException, ReflectiveOperationException, ExceptionNorme {
         out.println(ServiceRegistry.toStringue(false));
+        if (ServiceRegistry.getServiceCount() == 0) return;
         out.println("Tapez l'indice du service a desinstalle");
         ServiceRegistry.removeService(Integer.parseInt(in.readLine()) - 1);
         out.println("Le service a ete desinstaller");

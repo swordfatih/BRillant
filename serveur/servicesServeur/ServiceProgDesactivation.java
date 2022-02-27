@@ -15,6 +15,7 @@ public class ServiceProgDesactivation extends ServiceProg {
 
     public void activite(Socket client, BufferedReader in, PrintWriter out) throws IOException, ReflectiveOperationException, ExceptionNorme {
         out.println(ServiceRegistry.toStringue(true));
+        if (ServiceRegistry.getServiceCount() == 0) return;
         out.println("Tapez l'indice du service a desactiver");
         ServiceRegistry.setActifService(Integer.parseInt(in.readLine()) - 1, false);
         out.println("Le service a ete desactive");

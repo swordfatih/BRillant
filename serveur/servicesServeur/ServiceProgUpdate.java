@@ -20,14 +20,15 @@ public class ServiceProgUpdate extends ServiceProg {
     }
 
     public void activite(Socket client, BufferedReader in, PrintWriter out) throws IOException, ReflectiveOperationException, ExceptionNorme {
-        // URLClassLoader sur ftp
-        URLClassLoader urlcl = new URLClassLoader(new URL[]{new URL(ServiceProgAuthentification.getProgrammeur(login).getFTP())});
-
         out.println(ServiceRegistry.toStringue(true));
+        if (ServiceRegistry.getServiceCount() == 0) return;
+
         out.println("Tapez l'indice du service a mettre a jour");
         int indice = Integer.parseInt(in.readLine()) - 1;
         String classeName = ServiceRegistry.getServiceClass(indice).getName();
 
+        // URLClassLoader sur ftp
+        URLClassLoader urlcl = new URLClassLoader(new URL[]{new URL(ServiceProgAuthentification.getProgrammeur(login).getFTP())});
         Class<?> classeChargee = urlcl.loadClass(classeName);
         ServiceRegistry.updateService(indice, classeChargee.asSubclass(ServiceClient.class));
 
