@@ -24,5 +24,15 @@ Users use the port 3000 to connect to the server.
 # Usage
 When connected, programmers can log in their existing account or create a new account, in which case they need to provide the url of their FTP server. After authentification, different actions are possible as installing a new service, updating an existing one, activating or disactivating a service, changing the URL of your FTP server or deleting a service.
 
-Users are shown the list of active services. They can chose one and start using them. 
+Users are shown the list of active services. They can chose one and directly start using them. 
 
+## Service class standards
+Services are following the BRi standard, here are all the conditions.
+
+* extend bri.ServiceClient
+* not abstract
+* public class
+* have a public constructor (Socket as parameter) without exception
+* its superclass must have a private final Socket field
+* have a public static toStringue() method without exception
+* class' package must be named same as programmer's login
