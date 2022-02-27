@@ -19,6 +19,7 @@ public class ServiceProg extends ServiceServeur {
         ServiceProgAuthentification authentification = new ServiceProgAuthentification(client);
         authentification.activite(client, in, out);
         String login = authentification.getProgrammeur();
+        if(login == null) return;
 
         out.println("********************************************************************************");
         out.println("* Bienvenue dans votre gestionnaire dynamique d'activite BRi                   *");

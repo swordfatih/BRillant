@@ -70,6 +70,7 @@ public class ServiceProgAuthentification extends ServiceProg {
         if(choix.startsWith("1")) {
             if(!programmeurs.containsKey(login) || !programmeurs.get(login).validate(mdp)) {
                 out.println("Vos identifiants sont incorrects");
+                this.login = null;
                 return;
             }
         } else {

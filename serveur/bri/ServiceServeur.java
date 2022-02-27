@@ -36,7 +36,7 @@ public abstract class ServiceServeur implements Runnable {
         }
 
         if(out != null) out.println("fin");
-        System.out.println("[LOG] La connection avec un " + this.getUtilisateur() + " a ete interrompu");
+        System.out.println("[LOG] La connexion avec un " + this.getUtilisateur() + " a ete interrompu");
     }
 
     public abstract void activite(Socket client, BufferedReader in, PrintWriter out) throws ExceptionNorme, IOException, ReflectiveOperationException, NumberFormatException;

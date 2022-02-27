@@ -16,10 +16,14 @@ public class ServiceInversion extends ServiceClient {
 	}
 
 	public void activite(BufferedReader in, PrintWriter out) throws IOException {
-		out.println("Tapez le texte a inverser");
-		out.println(new StringBuffer(Arrays.stream(in.readLine()
-				.split("\\s+")).map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
-				.collect(Collectors.joining(" "))).reverse());
+		try {
+			out.println("Tapez le texte a inverser");
+			out.println(new StringBuffer(Arrays.stream(in.readLine()
+							.split("\\s+")).map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
+					.collect(Collectors.joining(" "))).reverse());
+		} catch(StringIndexOutOfBoundsException e) {
+			out.println("Le texte est vide");
+		}
 	}
 
 	public static String toStringue() {
