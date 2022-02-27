@@ -26,8 +26,8 @@ When connected, programmers can log in their existing account or create a new ac
 
 Users are shown the list of active services. They can chose one and directly start using them. 
 
-## Service class standards
-Services are following the BRi standard, here are all the conditions.
+## BRi Standard
+Services must follow the BRi standard in order to be added to the platform, here are all the conditions.
 
 * extend bri.ServiceClient
 * not abstract
