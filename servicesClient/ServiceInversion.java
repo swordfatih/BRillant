@@ -23,6 +23,6 @@ public class ServiceInversion extends ServiceClient {
 	}
 
 	public static String toStringue() {
-		return "Inversion de texte";
+		return "Inversion de texte 2.0";
 	}
 }

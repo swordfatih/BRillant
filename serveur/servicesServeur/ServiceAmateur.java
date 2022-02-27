@@ -32,7 +32,7 @@ public class ServiceAmateur extends ServiceServeur {
 		}
 
 		// instancier le service numéro "choix" en lui passant la socket "client"
-		Class<? extends ServiceClient> classe = ServiceRegistry.getServiceClass(choix);
+		Class<? extends ServiceClient> classe = ServiceRegistry.getServiceClass(choix - 1);
 		ServiceClient s = classe.getDeclaredConstructor(Socket.class).newInstance(client);
 
 		// invoquer run() pour cette instance ou la lancer dans un thread à part

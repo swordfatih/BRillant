@@ -42,7 +42,11 @@ public class ServiceRegistry {
 	static { servicesClasses = new Vector<>(); }
 
 	// ajoute une classe de service apres controle de la norme BRi
-	public static void addService(Class<? extends ServiceClient> classe) throws ExceptionNorme {
+	public static void addService(Class<? extends ServiceClient> classe, String login) throws ExceptionNorme {
+		// le package de la classe doit etre le login du programmeur
+		if(!classe.getPackageName().equals(login))
+			throw new ExceptionNorme("La classe doit avoir comme nom de package le login du programmeur");
+
 		// heriter de la classe abstraite bri.ServiceClient
 		if(!classe.getSuperclass().getName().equals(ServiceClient.class.getName()))
 			throw new ExceptionNorme("La classe doit heriter de la classe abstraite bri.ServiceClient");
@@ -79,8 +83,8 @@ public class ServiceRegistry {
 
 	public static void setActifService(int numService, boolean actif) throws ExceptionNorme {
 		synchronized (servicesClasses) {
-			if (numService < 1 || numService > servicesClasses.size())
-				throw new ExceptionNorme("La classe doit exister pour etre activee");
+			if (numService < 0 || numService >= servicesClasses.size())
+				throw new ExceptionNorme("La classe doit exister pour pouvoir modifier son etat");
 
 			servicesClasses.get(numService).setActif(actif);
 		}
@@ -88,23 +92,26 @@ public class ServiceRegistry {
 
 	public static void removeService(int numService) throws ExceptionNorme {
 		synchronized (servicesClasses) {
-			if (numService < 1 || numService > servicesClasses.size())
-				throw new ExceptionNorme("La classe doit exister pour etre desinstalle");
+			if (numService < 0 || numService >= servicesClasses.size())
+				throw new ExceptionNorme("La classe doit exister pour pouvoir etre desinstalle");
 
 			servicesClasses.remove(numService);
 		}
 	}
 
-	public static void updateService(Integer indice, Class<? extends ServiceClient> classe) {
+	public static void updateService(Integer numService, Class<? extends ServiceClient> classe) throws ExceptionNorme {
 		synchronized (servicesClasses) {
-			servicesClasses.set(indice, new InformationsService(classe, servicesClasses.get(indice).estActif()));
+			if (numService < 0 || numService >= servicesClasses.size())
+				throw new ExceptionNorme("La classe doit exister pour pouvoir etre mis a jour");
+
+			servicesClasses.set(numService, new InformationsService(classe, servicesClasses.get(numService).estActif()));
 		}
 	}
 	
 	// renvoie la classe du service se trouvant a l'indice n
 	public static Class<? extends ServiceClient> getServiceClass(int numService) {
 		synchronized (servicesClasses) {
-			if(numService < 1 || numService > servicesClasses.size())
+			if(numService < 0 || numService >= servicesClasses.size())
 				throw new NumberFormatException();
 
 			return servicesClasses.get(numService).getClasse();
