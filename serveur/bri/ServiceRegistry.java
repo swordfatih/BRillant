@@ -20,9 +20,9 @@ public class ServiceRegistry {
 
 	// ajoute une classe de service apres controle de la norme BLTi
 	public static void addService(Class<? extends ServiceClient > classe) throws ExceptionNorme {
-		// implementer l'interface BRi.Service
-		if(Arrays.stream(classe.getInterfaces()).noneMatch(i -> i == ServiceClient.class))
-			throw new ExceptionNorme("La classe doit implementer ServiceClient");
+		// heriter de la classe abstraite bri.ServiceClient
+		if(!classe.getSuperclass().getName().equals(ServiceClient.class.getName()))
+			throw new ExceptionNorme("La classe doit heriter de la classe abstraite bri.ServiceClient");
 
 		// ne pas etre abstract
 		if(Modifier.isAbstract(classe.getModifiers()))
@@ -37,12 +37,16 @@ public class ServiceRegistry {
 			throw new ExceptionNorme("La classe doit avoir un constructeur public (Socket) sans exception");
 
 		// avoir un attribut Socket private final
-		if(Arrays.stream(classe.getDeclaredFields()).noneMatch(f -> f.getType() == Socket.class && Modifier.isPrivate(f.getModifiers()) && Modifier.isFinal(f.getModifiers())))
-			throw new ExceptionNorme("La classe doit avoir un attribut Socket private final");
+		if(Arrays.stream(classe.getSuperclass().getDeclaredFields()).noneMatch(f -> f.getType() == Socket.class && Modifier.isPrivate(f.getModifiers()) && Modifier.isFinal(f.getModifiers())))
+			throw new ExceptionNorme("La classe parent doit avoir un attribut Socket private final");
 
 		// avoir une méthode public static String toStringue() sans exception
 		if(Arrays.stream(classe.getMethods()).noneMatch(m -> m.getName().equals("toStringue") && Modifier.isStatic(m.getModifiers()) && Modifier.isPublic(m.getModifiers()) && m.getReturnType() == String.class && m.getExceptionTypes().length == 0))
 			throw new ExceptionNorme("La classe doit avoir une méthode public static String toStringue() sans exception");
+
+		// ne pas etre deja ajoute
+		if(!servicesClasses.stream().noneMatch(c -> c.getName().equals(classe.getName())))
+			throw new ExceptionNorme("La classe doit ne pas etre deja installe");
 
 		// la classe respecte la norme BRi, on l'ajoute
 		servicesClasses.add(classe);
@@ -74,7 +78,13 @@ public class ServiceRegistry {
 				result.append("[");
 				result.append(i + 1);
 				result.append("] ");
-				result.append(servicesClasses.get(i).getName());
+
+				try {
+					result.append(servicesClasses.get(i).getMethod("toStringue").invoke(null));
+				} catch (ReflectiveOperationException e) {
+					result.append(servicesClasses.get(i).getName());
+				}
+
 				result.append("\n");
 			}
 
