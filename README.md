@@ -15,6 +15,8 @@ In order to start the server, compile it and start the main function in the `ser
 ## FTP
 You need an FTP server in order to use this platform. An Apache FTP Server installation is given in the repository, set your JRE installation folder as `JAVA_HOME` environement variable and start your server using the following command `bin\ftpd.bat res\conf\ftpd-typical.xml`. (`ftpd.sh` on Linux)
 
+Put your files in the `apache-ftpserver\res\home` folder.
+
 ### Programmers
 Programmers use the port 4000 to connect to the server.
 
@@ -27,7 +29,7 @@ When connected, programmers can log in their existing account or create a new ac
 Users are shown the list of active services. They can chose one and directly start using them. 
 
 ## BRi Standard
-Services must follow the BRi standard in order to be added to the platform, here are all the conditions.
+Service classes must follow the BRi standard in order to be added to the platform, here are all the conditions.
 
 * extend bri.ServiceClient
 * not abstract
