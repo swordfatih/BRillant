@@ -8,7 +8,7 @@ import java.io.*;
 import java.net.*;
 
 /**
- * Le service des amateurs
+ * Le service des amateurs 
  * Permet d'utiliser un service installe
  */
 public class ServiceAmateur extends ServiceServeur {

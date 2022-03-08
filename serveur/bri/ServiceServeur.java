@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public abstract class ServiceServeur implements Runnable {
-    private final Socket client;
+    private final Socket client; 
 
     public ServiceServeur(Socket socket) {
         client = socket;

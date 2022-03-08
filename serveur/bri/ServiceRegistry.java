@@ -67,9 +67,9 @@ public class ServiceRegistry {
 		if(Arrays.stream(classe.getSuperclass().getDeclaredFields()).noneMatch(f -> f.getType() == Socket.class && Modifier.isPrivate(f.getModifiers()) && Modifier.isFinal(f.getModifiers())))
 			throw new ExceptionNorme("La classe parent doit avoir un attribut Socket private final");
 
-		// avoir une méthode public static String toStringue() sans exception
+		// avoir une mï¿½thode public static String toStringue() sans exception
 		if(Arrays.stream(classe.getMethods()).noneMatch(m -> m.getName().equals("toStringue") && Modifier.isStatic(m.getModifiers()) && Modifier.isPublic(m.getModifiers()) && m.getReturnType() == String.class && m.getExceptionTypes().length == 0))
-			throw new ExceptionNorme("La classe doit avoir une méthode public static String toStringue() sans exception");
+			throw new ExceptionNorme("La classe doit avoir une mï¿½thode public static String toStringue() sans exception");
 
 		synchronized (servicesClasses) {
 			// ne pas etre deja ajoute
