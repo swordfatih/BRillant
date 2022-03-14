@@ -35,6 +35,7 @@ public class ServiceProg extends ServiceServeur {
         services.add(new ServiceProgDesactivation(client));
         services.add(new ServiceProgUpdate(client, login));
         services.add(new ServiceProgFTP(client, login));
+        services.add(new ServiceProgJar(client, login));
 
         int choix = -1;
         while(choix != services.size()) {
@@ -62,6 +63,8 @@ public class ServiceProg extends ServiceServeur {
                 out.println("La classe fournie ne se trouve pas sur le serveur FTP");
             } catch (NumberFormatException e) {
                 out.println("Aucun service ne correspond a l'indice donne");
+            } catch (NoClassDefFoundError e) {
+                out.println("Une classe n'a pas ete trouve, veuillez verifiez que vous avez bien charge les bibliotheques requises pour ce service");
             }
         }
     }

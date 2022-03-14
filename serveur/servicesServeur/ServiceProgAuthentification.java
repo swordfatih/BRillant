@@ -6,30 +6,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.HashMap;
 
-class InformationsProgrammeur {
-    private final String mdp;
-    private String ftp;
-
-    public InformationsProgrammeur(String mdp, String ftp) {
-        this.mdp = mdp;
-        this.ftp = ftp;
-    }
-
-    public boolean validate(String mdp) {
-        return this.mdp.equals(mdp);
-    }
-
-    public void setFTP(String ftp) {
-        this.ftp = ftp;
-    }
-
-    public String getFTP() {
-        return ftp;
-    }
-}
-
 public class ServiceProgAuthentification extends ServiceProg {
-    private static final HashMap<String, InformationsProgrammeur> programmeurs; // les programmeurs certifies
+    private static final HashMap<String, Programmeur> programmeurs; // les programmeurs certifies
 
     static {
         programmeurs = new HashMap<>();
@@ -82,7 +60,7 @@ public class ServiceProgAuthentification extends ServiceProg {
             out.println("Entrez l'adresse de votre serveur FTP");
             String ftp = in.readLine();
 
-            programmeurs.put(login, new InformationsProgrammeur(mdp, ftp));
+            programmeurs.put(login, new Programmeur(mdp, ftp));
         }
 
         this.login = login;
@@ -92,7 +70,7 @@ public class ServiceProgAuthentification extends ServiceProg {
         return login;
     }
 
-    public static InformationsProgrammeur getProgrammeur(String login) {
+    public static Programmeur getProgrammeur(String login) {
         return programmeurs.get(login);
     }
 }
