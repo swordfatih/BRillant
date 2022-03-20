@@ -5,6 +5,9 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 
+/*
+    Classe représentant un programmeur
+ */
 public class Programmeur {
     private URLClassLoader loader;
     private ArrayList<URL> urls;

@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/*
+    Classe de base pour les services de serveur
+ */
 public abstract class ServiceServeur implements Runnable {
     private final Socket client; 
 

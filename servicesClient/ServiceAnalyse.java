@@ -18,7 +18,7 @@ import java.net.URLConnection;
 import java.util.Properties;
 
 /**
- * Service inversant un mot donne
+ * Service analysant un fichier XML
  */
 public class ServiceAnalyse extends ServiceClient {
 	private static final String USERNAME = "bretteworldboss@gmail.com";
@@ -90,6 +90,7 @@ public class ServiceAnalyse extends ServiceClient {
 		}
 	}
 
+	// Envoyer un mail avec de la reflection
 	private static void sendMail(String mail, String sujet, String contenu) throws ReflectiveOperationException {
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
