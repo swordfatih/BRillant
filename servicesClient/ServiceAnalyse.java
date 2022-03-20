@@ -11,12 +11,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
-import java.lang.reflect.Method;
 import java.net.Socket;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLConnection;
-import java.util.Arrays;
 import java.util.Properties;
 
 /**
@@ -102,9 +100,6 @@ public class ServiceAnalyse extends ServiceClient {
 		prop.put("mail.smtp.starttls.enable", "true"); // TLS
 
 		Object session = Session.getMethod("getDefaultInstance", Properties.class).invoke(null, prop);
-
-		// Method[] messageMethods = MimeMessage.getMethods();
-		// Arrays.stream(messageMethods).filter(m -> m.getName() == "setFrom").findFirst().get();
 
 		Object message = MimeMessage.getConstructor(session.getClass()).newInstance(session);
 		MimeMessage.getMethod("setFrom", String.class).invoke(message, USERNAME);
